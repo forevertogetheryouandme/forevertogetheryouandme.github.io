@@ -1,0 +1,264 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+.header{
+    background-color:#fff;
+    padding:10px 5px 10px 5px;
+}
+.header span{
+    font-family: 'Inspiration', cursive;
+    font-size:50px;
+    font-weight: 500;
+}
+.header .row2{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.img-container{
+    padding-top:px;
+    display: inline-block;
+    width:50px;
+    height:50px;
+}
+.img-h{
+    width:100%;
+    height: auto;
+    z-index: 3;
+}
+.body{
+
+    height: auto;
+}
+.body span{
+    font-family: 'Inspiration', cursive;
+    font-size: 40px;
+    color:#fff;
+}
+.row{
+    max-width: 300px;
+    margin:0 auto;
+   
+}
+.row2{
+    max-width:1200px; 
+    margin:0 auto;
+   
+}
+.hero-text-boxx{
+    padding:10px;
+    width:100%;
+    height:auto;
+}
+.row3{
+    background-color: rgb(236, 220, 220);
+   
+    height:40px;
+    padding-top:10px;
+    padding-left:50px;
+    position:relative;
+    
+}
+
+.body .row p{
+    font-family: 'Open Sans', sans-serif;
+    font-style:italic;
+    color:#fff;
+}
+.hero-text-boxx label .row3 span{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/* a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+} */
+.nth-container{
+    position: absolute;
+    width:250px;
+    height:20px;
+   
+    /* left:-240px; */
+    right:-230px;
+   
+    
+}
+.rotating{ 
+}
+.body{
+   
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/ll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+/* --------------------------body2------------------------ */
+.row4{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+}
+.body2{
+  background-color: #f5f5f5;
+
+}
+.body2 .row4 h2{
+    font-family: sans-serif;
+}
+.box1{
+    
+    width:275px;
+   padding:10px 2px 5px 15px;
+  
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px rgb(160, 153, 153);
+    z-index: 4;
+}
+.box2{
+    
+    width:275px;
+    padding:10px 2px 5px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px rgb(160, 153, 153);
+    z-index: 4;
+}
+
+.name,.age,.date-of-birth{
+    margin-bottom:10px ;
+    font-family: sans-serif;
+}
+.row5{
+    max-width: 650px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+/* --------------------------------------
+.body2 .row4 h2{
+    font-family: sans-serif;
+} */
+.body2 .row4 h2{
+    font-family: sans-serif;
+}
+.row6{
+    height:400px;
+    max-width:500px;
+border:1px solid;
+    margin:0 auto;
+    padding:5px;
+    padding-top:25px;
+    max-height: 700px;
+    overflow-y: scroll;
+    position:relative;
+}
+.row6::-webkit-scrollbar{
+    display: none;
+}
+.row7{
+    height:400px;
+    max-width:500px;
+    margin:0 auto;
+    padding:5px;
+    font-family: sans-serif;
+}
+.annimessage{
+   
+    width:100%;
+    height:auto;
+}
+.footer{
+    /* background-color:blue ; */
+    width:100%;
+    height:100px;
+}
+.row-container{
+width:100%;
+height:100%;
+border:1px solid;
+padding:10px;
+
+}
+.row8{
+    height:50px;
+    max-width:700px;
+    margin:0 auto;
+    padding:5px;
+    font-family: sans-serif;
+    display:flex;
+    justify-content: space-between;
+}
+.min-counter{
+    width:350px;
+    height:50px;
+    border:1px solid;
+    padding:10px;
+    margin-left:13%;
+    position:absolute;
+    bottom:5px;
+    font-family: sans-serif;
+}
+.row9{
+   position:relative;
+   min-height:150px;
+    height:auto;
+    
+    box-shadow: 1px 1px 1px 2px rgb(53, 52, 52);
+    max-width:500px;
+    margin:0 auto;
+    padding:15px;
+    border-radius: 5px;
+}
+.locking{
+    margin-left:45%;
+    font-size: 50px;
+}
+/* --------------------------------------------------------- */
+.footer{
+    padding-top:10px;
+    height:150px;
+    width:100%;
+    background-color: rgb(143, 120, 120);
+}
+.row10{
+    max-width:700px;
+    height: 150px;
+    margin:0 auto;
+    position: relative;
+}
+.link a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;};
+.footer .row10 .link div{
+
+    background-color: azure;
+    padding:5px;
+}
+.link{
+    max-width:150px;
+    display:flex;
+    justify-content: space-between;
+}
+.copy{
+    position:absolute;
+    bottom:0px;
+    left:35%;
+}
+.mnual{
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size: 20px;
+    display:block;
+}
+.open{
+    height: auto;
+    max-height:max-content;
+}

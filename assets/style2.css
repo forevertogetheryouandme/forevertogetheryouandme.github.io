@@ -1,0 +1,112 @@
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .row10{
+    max-width:500px;
+    
+}
+.row5{
+  max-width: 650px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+.row7{
+  max-width:400px;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .row7{
+    max-width:400px;
+  }
+  .row9{
+ 
+     max-width:400px;
+    
+ }
+ .min-counter{
+  width:90%;
+  height:50px;
+  border:1px solid;
+  padding:10px;
+  margin-left:2%;
+  position:absolute;
+  bottom:5px;
+  font-family: sans-serif;
+}
+.row10{
+  max-width:300px;
+  
+}
+}
+@media only screen and (max-width: 400px) {
+span,p{
+  font-size: 13px;
+}
+  .row7{
+    max-width:280px;
+  }
+  .body{
+   
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/bq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+.body .row p{
+  font-family: 'Open Sans', sans-serif;
+  font-style:italic;
+  color:rgb(230, 96, 96);
+}
+.body span{
+  font-family: 'Inspiration', cursive;
+  font-size: 40px;
+  color:#fff;
+}
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
