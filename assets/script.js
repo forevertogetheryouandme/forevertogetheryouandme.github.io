@@ -71,25 +71,25 @@ const anni_animator= document.querySelector(".nth-container");
 
  
 
-setInterval(()=>{
-    let counter=document.getElementById('length').offsetWidth;
-    if(anni_animator.classList.contains("rotating")){
- const transition = document.querySelector('.rotating');
+// setInterval(()=>{
+//     let counter=document.getElementById('length').offsetWidth;
+//     if(anni_animator.classList.contains("rotating")){
+//  const transition = document.querySelector('.rotating');
 
-  transition.addEventListener('transitionend', () => {
-    anni_animator.style=`transition:none;right:-230px;`;
-    anni_animator.classList.remove("rotating");
+//   transition.addEventListener('transitionend', () => {
+//     anni_animator.style=`transition:none;right:-230px;`;
+//     anni_animator.classList.remove("rotating");
 
-});
+// });
 
         
-}else{
-    anni_animator.classList.add("rotating");
-    anni_animator.style=`right:${counter}px; transition:all  15s ease-in-out;`;
+// }else{
+//     anni_animator.classList.add("rotating");
+//     anni_animator.style=`right:${counter}px; transition:all  15s ease-in-out;`;
        
-};
+// };
 
-},1000)
+// },1000)
 
 
 
