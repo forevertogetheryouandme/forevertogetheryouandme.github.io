@@ -65,13 +65,17 @@ body{
     /* position:relative; */
     
 }
-
+.row7 p{
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
 .body .row p{
     font-family: 'Open Sans', sans-serif;
     font-style:italic;
     color:#fff;
 }
-.hero-text-boxx label .row3 span{
+.hero-text-boxx a .row3 span{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     
