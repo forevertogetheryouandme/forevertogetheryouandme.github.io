@@ -96,7 +96,7 @@ const anni_animator= document.querySelector(".nth-container");
 
 // -----------------------------------------------------------
 let user1="2004-5-25";
-let user2="2007-5-8";
+let user2="2007-5-18";
 
 document.getElementById("age-date").innerHTML= user1;
 document.getElementById("age-date2").innerHTML= user2;
@@ -146,15 +146,19 @@ setInterval(() => {
 let start2=new Date();
 let currentdateyear=new Date().getUTCFullYear();
 let currentdateMonth= new Date().getMonth();
+let currentday= new Date().getDate();
 
 if(currentdateMonth==12){
 currentdateMonth=-1;
 currentdateyear+=1;
 };
 let futuremonth=currentdateMonth+1;
-let futuredate=new Date(currentdateyear,futuremonth,3);
 
-
+if(currentday<4){
+    var futuredate=new Date(currentdateyear,currentdateMonth,3);
+}else{
+    var futuredate=new Date(currentdateyear,futuremonth);
+};
 
 let predict=futuredate.getTime() - start2.getTime() ;
 let days=Math.floor(predict / (1000 * 3600 * 24));
@@ -163,9 +167,16 @@ let minutes= Math.floor((((predict/1000)-(days*86400))-(hours*3600))/60);
 let seconds2=Math.floor(((((predict/1000)-(days*86400))-(hours*3600))-(minutes*60)));
 
 if(days==0 && hours==0 && minutes==0 && seconds2==0){
-    document.getElementById("gg").innerHTML=`<div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis distinctio fugiat magni reprehenderit, obcaecati eos quas rem consequuntur ab asperiores sequi quisquam eligendi praesentium, nostrum molestias minima. Nihil, odit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea consequuntur itaque nam nobis dolor sed sapiente sint officiis ipsam quam quo odio est perferendis? Aliquid ratione accusamus necessitatibus officiis.</p>
+    document.getElementById("row-xx").style="display:none";
+    document.getElementById("gg").innerHTML=`<div style="line-height:1.5em">
+ <div> Dear My Love,</div>
+<p> I Love you so much. Although I told that many times to you , I can swear these words come from my deepest part of my heart.
+I wanna stay and grow with you till I die.You're an angel for my life. I got everything from you what I expected,Love,attention,jealous everythig.
+I believed I did unbreakable relationship with you.Let me say again , I love you girl.
+ Be my girl till you become my wife <3.  </p>
+
+<div style="margin-left:auto">Your lovingly Nyi Linn Kha.</div>
+
       </div>`;
 }
 
